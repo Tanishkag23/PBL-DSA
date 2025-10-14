@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Expenses</h2>
+<form method="get" class="row">
+  <input name="category" placeholder="Filter by category" value="{{ q_cat }}">
+  <input name="q" placeholder="Search description" value="{{ q_text }}">
+  <button>Apply</button>
+</form>
+
+<form method="post" class="card">
+  <div class="row">
+    <label>Amount <input name="amount" type="number" step="0.01" required></label>
+    <label>Date(yyyymmdd) <input name="date" type="number" required></label>
+    <label>Category <input name="category" required></label>
+  </div>
+  <label>Description <input name="description"></label>
+  <button type="submit">Add Expense</button>
+</form>
+
+<table>
+  <thead>
+    <tr><th>ID</th><th>Amount</th><th>Date</th><th>Category</th><th>Description</th><th></th></tr>
+  </thead>
+  <tbody>
+  {% for it in items %}
+    <tr>
+      <td>{{ it.id }}</td>
+      <td>{{ '%.2f'|format(it.amount) }}</td>
+      <td>{{ it.date }}</td>
+      <td>{{ it.category }}</td>
+      <td>{{ it.description }}</td>
+      <td>
+        <form method="post" action="{{ url_for('delete_expense', item_id=it.id) }}">
+          <button class="danger">Delete</button>
+        </form>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Report</h2>
+<div class="grid">
+  <div class="card"><div class="title">Income</div><div class="value">{{ '%.2f'|format(income) }}</div></div>
+  <div class="card"><div class="title">Total Expenses</div><div class="value">{{ '%.2f'|format(total) }}</div></div>
+  <div class="card"><div class="title">Balance</div><div class="value">{{ '%.2f'|format(balance) }}</div></div>
+</div>
+
+<h3>By Category</h3>
+<table>
+  <thead><tr><th>Category</th><th>Total</th></tr></thead>
+  <tbody>
+  {% for cat, tot in cat_totals.items() %}
+    <tr><td>{{ cat }}</td><td>{{ '%.2f'|format(tot) }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
