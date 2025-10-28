@@ -1,4 +1,0 @@
-3,demo,2024-01-12,EXPENSE,Food,300.00,INR,Cafeteria
-4,demo,2024-01-15,EXPENSE,Books,1200.00,INR,Semester books
-5,demo,2024-02-01,EXPENSE,Transport,150.00,INR,Bus pass
-
