@@ -1,0 +1,57 @@
+ADD|user=demo|A_id=-1|B_id=1|note=new transaction added
+ADD|user=demo|A_id=-1|B_id=2|note=new transaction added
+ADD|user=demo|A_id=-1|B_id=3|note=new transaction added
+ADD|user=demo|A_id=-1|B_id=4|note=new transaction added
+ADD|user=demo|A_id=-1|B_id=5|note=new transaction added
+ADD|user=demo|A_id=-1|B_id=8|note=new transaction added
+DELETE|user=demo|A_id=8|B_id=-1|note=transaction deleted
+ADD|user=t|A_id=-1|B_id=6|note=new transaction added
+ADD|user=t|A_id=-1|B_id=7|note=new transaction added
+DELETE|user=demo|A_id=3|B_id=-1|note=transaction deleted
+DELETE|user=demo|A_id=4|B_id=-1|note=transaction deleted
+DELETE|user=demo|A_id=5|B_id=-1|note=transaction deleted
+ADD|user=t|A_id=-1|B_id=8|note=new transaction added
+EDIT|user=t|A_id=8|B_id=8|note=transaction edited
+ADD|user=demo|A_id=-1|B_id=9|note=new transaction added
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=demo|A_id=9|B_id=9|note=transaction edited
+EDIT|user=t|A_id=8|B_id=8|note=transaction edited
+EDIT|user=t|A_id=8|B_id=8|note=transaction edited
+EDIT|user=t|A_id=8|B_id=8|note=transaction edited
+2025-10-28 09:56:48,demo,login,success
+2025-10-28 10:01:28,t,login,success
+2025-10-28 10:39:00,t,logout,ok
+2025-10-28 10:39:00,demo,login,success
+2025-10-28 10:39:05,t,login,success
+2025-10-28 10:39:47,t,add_expense,expense 100.00 home
+2025-10-28 10:41:27,demo,login,success
+2025-10-28 10:41:34,t,login,success
+2025-10-28 10:43:22,demo,login,success
+2025-10-28 10:44:23,demo,login,success
+2025-10-28 10:45:39,m,signup,created
+2025-10-28 10:45:43,m,login,success
+2025-10-28 10:45:56,m,set_income,income=1000.00
+2025-10-28 10:46:34,m,set_budget,rent=11500.00
+2025-10-28 10:47:00,m,add_expense,expense 1200.00 rent
+2025-10-28 10:48:35,m,logout,ok
+2025-10-28 10:48:35,demo,login,success
+2025-10-28 10:49:58,demo,add_expense,expense 120.00 food
+2025-10-28 10:50:43,demo,set_income,income=1000.00
+2025-10-28 10:51:29,demo,set_income,income=123.00
+2025-10-28 10:52:29,m,login,success

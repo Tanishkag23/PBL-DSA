@@ -1,0 +1,5 @@
+6,t,2024-10-01,EXPENSE,rent,700.00,INR,October rent
+7,t,2025-10-10,EXPENSE,fuel,1000.00,INR,bjfbf
+10,t,2025-10-10,EXPENSE,home,100.00,INR,bdfsbdfs
+12,m,2025-20-12,EXPENSE,rent,1200.00,INR,dfsbvdfs
+13,demo,2025-02-09,EXPENSE,food,120.00,INR,food
