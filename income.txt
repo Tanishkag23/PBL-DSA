@@ -1,2 +1,0 @@
-1,demo,2024-01-10,INCOME,Scholarship,5000.00,INR,Scholarship Jan
-2,demo,2024-02-10,INCOME,Scholarship,5000.00,INR,Scholarship Feb
